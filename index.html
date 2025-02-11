@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>💖 Carmen, ¿quieres ser mi San Valentín? 💖</h1>
+        <div class="buttons">
+            <button class="btn yes" onclick="showHearts(); showMessage();">Sí</button>
+            <!-- Aquí redirigimos a 'album.html' al hacer clic en ¡Por supuesto! -->
+            <button class="btn absolutely" onclick="showHearts(); showMessage(); window.location.href='album.html';">¡Por supuesto!</button>
+            <button class="btn no" id="noButton" onmousedown="shrinkButton();" onmouseup="resetButton();">No 😢</button>
+        </div>
+        <p class="hidden-message">Sabía que dirías que sí 💖 ¡Te amo, Carmen!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
